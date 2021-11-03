@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Buttons extends React.Component {
+export default class Events extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -23,7 +23,7 @@ export default class Buttons extends React.Component {
   }
 }
 
-Buttons.propTypes = {
+Events.propTypes = {
   onClick: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
   Obj: PropTypes.objectOf(PropTypes.string).isRequired,

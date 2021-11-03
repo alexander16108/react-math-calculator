@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Events extends React.Component {
+export default class Buttons extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
 
-    this.renderClicks = this.renderClicks.bind(this);
+    this.click = this.click.bind(this);
   }
 
-  renderClicks() {
+  click() {
     const { text, onClick, Obj } = this.props;
     onClick(Obj, text);
   }
@@ -18,12 +18,12 @@ export default class Events extends React.Component {
     const { text } = this.props;
 
     return (
-      <button type="button" className="calc-btn" onClick={this.renderClicks}>{text}</button>
+      <button type="button" className="calc-btn">{text}</button>
     );
   }
 }
 
-Events.propTypes = {
+Buttons.propTypes = {
   onClick: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
   Obj: PropTypes.objectOf(PropTypes.string).isRequired,

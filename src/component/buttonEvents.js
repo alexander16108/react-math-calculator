@@ -18,7 +18,7 @@ export default class Buttons extends React.Component {
     const { text } = this.props;
 
     return (
-      <button type="button" className="calc-btn">{text}</button>
+      <button type="button" className="calc-btn" onClick={this.click}>{text}</button>
     );
   }
 }

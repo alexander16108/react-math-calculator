@@ -1,10 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
 import calculate from '../logic/calculate';
 import '../logic/operate';
-import Home from './pages/Home';
-import Quote from './pages/Quotes';
 import Buttons from './buttonEvents';
 
 const Calculator = () => {
@@ -24,53 +21,48 @@ const Calculator = () => {
     calculations = '0';
   } else {
     calculations = calcObj.next != null ? calcObj.next
-      : calcObj.next != null ? calcObj.total
+      : calcObj.total != null ? calcObj.total
         : calcObj.operation;
   }
   return (
-    <Routes>
-      <Route exact path="/">
-        <div className="calc-container">
-          <div className="calc-firstDisplay">{calculations}</div>
-          <div className="calc-Buns">
-            <div className="calc-greyBtns">
-              <div className="calc-greyBtn1">
-                <Buttons text="AC" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="+/-" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="%" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="7" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="8" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="9" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="4" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="5" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="6" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="1" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="2" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="3" Obj={calcObj} onClick={handleClick} />
-              </div>
-              <div className="calc-greyBtn2">
-                <Buttons text="0" Obj={calcObj} onClick={handleClick} />
-                <Buttons text="." Obj={calcObj} onClick={handleClick} />
-              </div>
+    <div className="calc-page">
+      <div className="calc-header">
+        <h1>Lets do some math</h1>
+      </div>
+      <div className="calc-container">
+        <div className="calc-firstDisplay">{calculations}</div>
+        <div className="calc-Buns">
+          <div className="calc-greyBtns">
+            <div className="calc-greyBtn1">
+              <Buttons text="AC" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="+/-" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="%" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="7" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="8" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="9" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="4" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="5" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="6" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="1" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="2" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="3" Obj={calcObj} onClick={handleClick} />
             </div>
-
-            <div className="orange-btn">
-              <Buttons text="/" Obj={calcObj} onClick={handleClick} />
-              <Buttons text="*" Obj={calcObj} onClick={handleClick} />
-              <Buttons text="-" Obj={calcObj} onClick={handleClick} />
-              <Buttons text="+" Obj={calcObj} onClick={handleClick} />
-              <Buttons text="=" Obj={calcObj} onClick={handleClick} />
+            <div className="calc-greyBtn2">
+              <Buttons text="0" Obj={calcObj} onClick={handleClick} />
+              <Buttons text="." Obj={calcObj} onClick={handleClick} />
             </div>
           </div>
+
+          <div className="orange-btn">
+            <Buttons text="/" Obj={calcObj} onClick={handleClick} />
+            <Buttons text="*" Obj={calcObj} onClick={handleClick} />
+            <Buttons text="-" Obj={calcObj} onClick={handleClick} />
+            <Buttons text="+" Obj={calcObj} onClick={handleClick} />
+            <Buttons text="=" Obj={calcObj} onClick={handleClick} />
+          </div>
         </div>
-      </Route>
-      <Route path="/home">
-        <Home />
-      </Route>
-      <Route path="/quote">
-        <Quote />
-      </Route>
-    </Routes>
+      </div>
+    </div>
   );
 };
 

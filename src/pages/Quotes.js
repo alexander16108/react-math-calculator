@@ -2,7 +2,7 @@ import React from 'react';
 
 const Quote = () => (
   <div className="quote-page">
-    <h1>today&apos;s quote....</h1>
+    <h1>Today&apos;s Quote....</h1>
     <p>
       When the seas of life get rough, remember Someone else was here in the
       same boat with the same scenerio and scaled through. - Unknown

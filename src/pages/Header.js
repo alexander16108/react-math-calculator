@@ -7,38 +7,62 @@ const Header = () => {
       id: 1,
       path: '/',
       text: 'Home',
-      classname: 'homePage',
+      activeClasses: 'homePage',
     },
     {
       id: 2,
       path: '/calculator',
       text: 'Calculator',
-      classname: 'calcPage',
+      activeClasses: 'calcPage',
     },
     {
       id: 2,
       path: '/quotes',
       text: 'Quotes',
-      classname: 'quotePage',
+      activeClasses: 'quotePage',
     },
   ];
 
   return (
     <div className="nav">
-      <nav className="navBar">
+      <nav
+        className="navBar"
+        style={{
+          display: 'flex',
+          padding: '10px',
+          justifyContent: 'space-between',
+        }}
+      >
         <h1 className="title">
-          MathMagicians
+          Math Magicians
         </h1>
         <ul className="otherPages">
           {links.map((link) => (
-            <li className={link.classname} key={link.id}>
+            <li className={link.activeClasses} key={link.id}>
               <NavLink to={link.path} activeClassName="active-link" exact>{link.text}</NavLink>
             </li>
           ))}
         </ul>
       </nav>
-      <footer className="footer">
-        <p>Created by Alexander Mayowa</p>
+      <footer
+        className="footer"
+        style={{
+          position: 'fixed',
+          top: '100%',
+          left: '0%',
+          bottom: '100%',
+          padding: '30px',
+          backgroundColor: 'grey',
+        }}
+      >
+        <p
+          style={{
+            textAlign: 'center',
+            fontSize: '20px',
+          }}
+        >
+          Created by Alexander Mayowa
+        </p>
       </footer>
     </div>
   );

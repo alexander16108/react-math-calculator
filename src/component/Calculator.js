@@ -31,7 +31,7 @@ const Calculator = () => {
       </div>
       <div className="calc-container">
         <div className="calc-firstDisplay">{calculations}</div>
-        <div className="calc-Buns">
+        <div className="calc-Btns">
           <div className="calc-greyBtns">
             <div className="calc-greyBtn1">
               <Buttons text="AC" Obj={calcObj} onClick={handleClick} />

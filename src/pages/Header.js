@@ -38,7 +38,7 @@ const Header = () => {
         </ul>
       </nav>
       <footer className="footer">
-        <p>Created by Chawanzi Ng&apos;uni</p>
+        <p>Created by Alexander Mayowa</p>
       </footer>
     </div>
   );

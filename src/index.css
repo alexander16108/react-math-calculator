@@ -12,7 +12,7 @@
 .otherPages li {
   margin: 10px;
   padding: 10px;
-  color:black;
+  color: black;
   border-top: 2px solid rgba(60, 37, 128, 0.925);
   border-left: 2px solid rgba(60, 37, 128, 0.925);
   border-right: 2px solid rgba(60, 37, 128, 0.925);
@@ -21,11 +21,11 @@
 .title {
   color: rgba(20, 19, 19, 0.719);
   font-size: 54px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .home-details {
-  padding-top: 5em;  
+  padding-top: 5em;
   width: 90%;
   margin: 0% auto;
 }
@@ -35,7 +35,7 @@
   text-decoration: underline;
   font-size: 35px;
   padding-bottom: 1em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .home-para,

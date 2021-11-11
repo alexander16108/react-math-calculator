@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .otherPages {
@@ -18,8 +21,13 @@
   border-right: 2px solid rgba(60, 37, 128, 0.925);
 }
 
+.active-link {
+  text-decoration: none;
+  color: orange;
+}
+
 .title {
-  color: rgba(20, 19, 19, 0.719);
+  color: orange;
   font-size: 54px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -32,6 +40,7 @@
 
 .home-title,
 .quote-page h1 {
+  color: orange;
   text-decoration: underline;
   font-size: 35px;
   padding-bottom: 1em;
@@ -48,7 +57,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 20px;
+  margin: 70px 40px 0 0;
 }
 
 .quote-page {
@@ -58,14 +67,14 @@
 }
 
 .calc-container {
-  width: 44%;
+  max-width: 26.36em;
 }
 
 .calc-firstDisplay {
   background-color: grey;
   color: white;
   text-align: end;
-  padding: 15px;
+  padding: 20px;
 }
 
 .calc-Btns {
@@ -83,8 +92,8 @@
 }
 
 button {
-  width: 160px;
-  padding: 40px;
+  width: 130px;
+  padding: 20px;
   background-color: #e0e0e0;
   margin: 1px;
   text-align: center;
@@ -100,10 +109,27 @@ button {
 .orange-btn {
   display: flex;
   flex-direction: column;
-  width: 155px;
+  width: 135px;
   text-align: center;
 }
 
 .orange-btn button {
   background-color: #f5913e;
+}
+
+.footer {
+  background-color: grey;
+  padding-top: 7px;
+  position: absolute;
+  top: 95%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.footer p{
+  color: #f5913e;
+text-align: center;
+font-size: 22px;
+font-weight: 400;
 }

@@ -44,23 +44,8 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <footer
-        className="footer"
-        style={{
-          position: 'fixed',
-          top: '100%',
-          left: '0%',
-          bottom: '100%',
-          padding: '30px',
-          backgroundColor: 'grey',
-        }}
-      >
-        <p
-          style={{
-            textAlign: 'center',
-            fontSize: '20px',
-          }}
-        >
+      <footer className="footer">
+        <p>
           Created by Alexander Mayowa
         </p>
       </footer>

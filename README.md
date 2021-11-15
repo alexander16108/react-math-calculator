@@ -4,9 +4,9 @@
 
 > One paragraph statement about the project.
 
-![image](https://user-images.githubusercontent.com/60612329/141198986-92ffb438-1481-4466-b0bb-545821394fc8.png)
-![image](https://user-images.githubusercontent.com/60612329/141199096-b9481509-8618-46a6-a73b-fd22c326da69.png)
-![image](https://user-images.githubusercontent.com/60612329/141199153-e32b2994-79dd-4111-9d06-4b942122d18a.png)
+![image](https://user-images.githubusercontent.com/60612329/141262881-7b525d13-62d1-4602-b195-3d7f810c2212.png)
+![image](https://user-images.githubusercontent.com/60612329/141262965-119dfaea-445c-40db-9133-0b1a50932274.png)
+![image](https://user-images.githubusercontent.com/60612329/141263018-dc7f79b5-58cf-4f31-95ff-3f3c2618d311.png)
 
 
 <p align="center">Additional description about the project and its features.</p>
